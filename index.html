@@ -1,1 +1,217 @@
-<h1>Your Story, Their Story, Our Story</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Story, Their Story, Our Story</title>
+
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#0e0b0d;color:#fff;font-family:Arial,sans-serif}
+h1,h2,h3{font-family:Georgia,serif}
+a{text-decoration:none;color:inherit}
+:root{--pink:#e76f92;--soft:#fff1ee;--dark:#0e0b0d;--line:#8b4058}
+
+nav{position:sticky;top:0;z-index:10;background:#050505;padding:16px 7%;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.logo{font-family:Georgia,serif;line-height:1.05;font-size:15px}
+.logo span{font-family:cursive;color:var(--pink);font-size:25px}
+.links{display:flex;gap:22px;flex-wrap:wrap;font-size:13px;font-weight:bold}
+.links a:hover{color:var(--pink)}
+.btn{display:inline-block;background:var(--pink);color:white;padding:13px 26px;border-radius:6px;font-weight:bold;border:none;cursor:pointer}
+.btn.outline{background:transparent;border:1px solid white}
+
+.hero{padding:90px 7%;background:linear-gradient(135deg,#120d11,#30111f,#0e0b0d);display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.hero h1{font-size:62px;line-height:.98;margin:0}
+.hero h1 span{font-family:cursive;color:var(--pink);font-size:78px}
+.hero p{font-size:22px}
+.quote{border:1px solid var(--pink);border-radius:14px;padding:30px;text-align:center;font-size:21px;line-height:1.5}
+.quote span{font-family:cursive;color:var(--pink);font-size:34px}
+
+section{padding:60px 7%}
+.light{background:var(--soft);color:#22181f}
+.center{text-align:center;max-width:1100px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
+.card{background:#171316;border:1px solid var(--line);padding:28px;border-radius:8px}
+.card h3{color:var(--pink);margin-top:0}
+
+.meet{display:grid;grid-template-columns:1fr 1.1fr;gap:35px;align-items:center;padding:0}
+.meet img{width:100%;height:100%;object-fit:cover}
+.meet-text{padding:45px}
+.signature{font-family:cursive;color:var(--pink);font-size:34px}
+
+.books{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.book-card{border:1px solid var(--line);padding:25px;display:grid;grid-template-columns:180px 1fr;gap:25px;align-items:center}
+.book-card img{width:100%;border:1px solid #333}
+
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;text-align:center}
+.step-num{background:var(--pink);width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-weight:bold}
+
+.form-box{background:var(--soft);color:#241921;padding:28px;border-radius:8px}
+input,select,textarea{width:100%;padding:12px;margin:7px 0 15px;border:1px solid #d9b8c2;border-radius:4px}
+textarea{height:160px}
+.checkbox{display:flex;gap:10px;align-items:flex-start}
+.checkbox input{width:auto}
+
+.resource-card{display:flex;gap:15px;align-items:flex-start;margin-bottom:18px}
+.icon{background:var(--pink);width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:bold}
+
+footer{background:#050505;padding:30px 7%;text-align:center;color:#ddd}
+
+@media(max-width:850px){
+.hero,.meet,.books,.book-card{grid-template-columns:1fr}
+.hero h1{font-size:44px}
+.hero h1 span{font-size:56px}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">YOUR STORY.<br>THEIR STORY.<br><span>Our Story ♡</span></div>
+  <div class="links">
+    <a href="#home">HOME</a>
+    <a href="#stories">READ STORIES</a>
+    <a href="#share">SHARE YOUR STORY</a>
+    <a href="#resources">RESOURCES</a>
+    <a href="#about">ABOUT SAMMI</a>
+    <a href="#contact">CONTACT</a>
+  </div>
+  <a class="btn" href="#share">SHARE YOUR STORY ♡</a>
+</nav>
+
+<section class="hero" id="home">
+  <div>
+    <h1>YOUR STORY.<br>THEIR STORY.<br><span>Our Story. ♡</span></h1>
+    <p>A place where stories become hope.</p>
+    <a class="btn" href="#share">SHARE YOUR STORY ♡</a>
+    <a class="btn outline" href="#stories">READ STORIES</a>
+  </div>
+  <div class="quote">
+    Addiction does not just affect one person.<br>
+    It touches families, breaks hearts, and changes lives.<br>
+    But stories?<br><span>Stories heal.</span>
+  </div>
+</section>
+
+<section class="light">
+  <div class="center">
+    <h2>Why This Exists</h2>
+    <p>This is a safe space for real people to share real stories of addiction, recovery, loss, hope, and healing. Every story has the power to help someone else feel less alone.</p>
+    <p><strong>Your story matters. You matter.</strong></p>
+  </div>
+</section>
+
+<section id="about" class="meet">
+  <img src="Head%20shot.jpg" alt="Sammi Hurst">
+  <div class="meet-text">
+    <h2>Meet Sammi ♡</h2>
+    <p>This did not start as a website. It started with heartbreak, love, grief, and the need to turn pain into something that could help someone else.</p>
+    <p>I know what it is like to love someone through addiction. I know the confusion, the anger, the fear, and the silent prayers no one else hears.</p>
+    <p>After writing my first book, I realized my story was not the only one that needed to be told. Every day, there are families, friends, people in recovery, and people grieving carrying stories they have never spoken out loud.</p>
+    <p><strong>Your Story, Their Story, Our Story</strong> was created to give those stories a place to live.</p>
+    <p class="signature">With love and hope,<br>Sammi Hurst ♡</p>
+    <p>Author | Advocate | Founder of Your Story, Their Story, Our Story</p>
+  </div>
+</section>
+
+<section id="books">
+  <div class="center"><h2>Books ♡</h2></div>
+
+  <div class="books">
+    <div class="book-card">
+      <img src="Cover.png" alt="Raising His Memory book cover">
+      <div>
+        <h3>Available Now</h3>
+        <p><strong>Raising His Memory</strong> is a raw and honest memoir about loving someone through addiction and living with the lasting impact it leaves behind.</p>
+        <p>This is a story of pain, survival, grief, and the love that never stopped.</p>
+        <a class="btn" href="https://www.amazon.com/dp/B0H6R3XR9D" target="_blank">VIEW ON AMAZON</a>
+      </div>
+    </div>
+
+    <div class="book-card">
+      <div>
+        <h3>Coming Soon</h3>
+        <h2>Your Story,<br>Their Story,<br>Our Story ♡</h2>
+        <p>A collection of real stories from real people. Different journeys. One powerful purpose.</p>
+        <p>If you would like your story to be considered for inclusion in the book, let me know when you submit. Every story is reviewed personally and treated with respect.</p>
+        <a class="btn" href="#share">SUBMIT YOUR STORY</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="center"><h2>What Happens After You Submit?</h2></div>
+  <div class="steps">
+    <div><div class="step-num">1</div><h3>You Share</h3><p>Submit your story using the form. You can use your name or remain anonymous.</p></div>
+    <div><div class="step-num">2</div><h3>I Read Every Story</h3><p>Every submission is personally reviewed with care, compassion, and respect.</p></div>
+    <div><div class="step-num">3</div><h3>You Stay In Control</h3><p>If you ask to be contacted first, your story will not be shared until permission is given.</p></div>
+    <div><div class="step-num">4</div><h3>Your Story Can Help</h3><p>Some stories may be shared on the website. Others may be considered for the book.</p></div>
+  </div>
+</section>
+
+<section id="share" class="light">
+  <div class="grid">
+    <div class="form-box">
+      <h2>Share Your Story ♡</h2>
+      <p>Your story matters. Let it be heard.</p>
+
+      <form action="https://formsubmit.co/yourstorytheirstoryourstory@gmail.com" method="POST">
+        <label>Name or Anonymous</label>
+        <input type="text" name="name" placeholder="Name or Anonymous" required>
+
+        <label>Email Address</label>
+        <input type="email" name="email" placeholder="Email Address">
+
+        <label>What is your story about?</label>
+        <select name="topic" required>
+          <option value="">Select a topic</option>
+          <option>Addiction</option>
+          <option>Recovery</option>
+          <option>Grief</option>
+          <option>Family</option>
+          <option>Hope</option>
+        </select>
+
+        <label>Your Story</label>
+        <textarea name="story" placeholder="Share as much or as little as you feel comfortable." required></textarea>
+
+        <label class="checkbox"><input type="checkbox" name="book-consideration"> I would like my story to be considered for the book.</label>
+        <label class="checkbox"><input type="checkbox" name="website-permission"> You may publish my story on the website.</label>
+
+        <input type="hidden" name="_subject" value="New Story Submission">
+        <input type="hidden" name="_captcha" value="false">
+
+        <button class="btn" type="submit">SUBMIT YOUR STORY ♡</button>
+      </form>
+    </div>
+
+    <div class="card" id="stories">
+      <h2>Featured Stories</h2>
+      <p>The first story is waiting to be told.</p>
+      <p class="signature">It could be yours.</p>
+      <a class="btn" href="#share">SHARE YOUR STORY</a>
+    </div>
+
+    <div class="card" id="resources">
+      <h2>Resources</h2>
+      <p>You do not have to go through this alone.</p>
+
+      <div class="resource-card"><div class="icon">!</div><div><h3>Crisis Help</h3><p><a href="https://988lifeline.org/" target="_blank">988 Lifeline</a></p></div></div>
+      <div class="resource-card"><div class="icon">♡</div><div><h3>Recovery Support</h3><p><a href="https://www.samhsa.gov/find-help/helplines/national-helpline" target="_blank">SAMHSA Helpline</a></p></div></div>
+      <div class="resource-card"><div class="icon">⌕</div><div><h3>Treatment Locator</h3><p><a href="https://findtreatment.gov/" target="_blank">FindTreatment.gov</a></p></div></div>
+      <div class="resource-card"><div class="icon">+</div><div><h3>Naloxone Info</h3><p><a href="https://www.cdc.gov/stop-overdose/caring/naloxone.html" target="_blank">CDC Naloxone Guide</a></p></div></div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <p>You are not alone. Your story is not over.</p>
+  <p>Contact: yourstorytheirstoryourstory@gmail.com</p>
+  <p>© 2026 Your Story, Their Story, Our Story</p>
+</footer>
+
+</body>
+</html>
