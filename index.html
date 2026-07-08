@@ -8,17 +8,19 @@
 <style>
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:#0e0b0d;color:#fff;font-family:Arial,sans-serif}
+body{margin:0;background:#0e0b0d;color:#fff;font-family:Arial,Helvetica,sans-serif;line-height:1.7}
 h1,h2,h3{font-family:Georgia,serif}
 a{text-decoration:none;color:inherit}
-:root{--pink:#e76f92;--soft:#fff1ee;--dark:#0e0b0d;--line:#8b4058}
+:root{--pink:#e86b95;--pink2:#ff9fbe;--soft:#fff1f4;--dark:#0e0b0d;--card:#181316;--line:#7e3d50}
 
 nav{position:sticky;top:0;z-index:10;background:#050505;padding:16px 7%;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
-.logo{font-family:Georgia,serif;line-height:1.05;font-size:15px}
+.logo{font-family:Georgia,serif;line-height:1.05;font-size:15px;font-weight:bold}
 .logo span{font-family:cursive;color:var(--pink);font-size:25px}
 .links{display:flex;gap:22px;flex-wrap:wrap;font-size:13px;font-weight:bold}
+.links a{color:white}
 .links a:hover{color:var(--pink)}
 .btn{display:inline-block;background:var(--pink);color:white;padding:13px 26px;border-radius:6px;font-weight:bold;border:none;cursor:pointer}
+.btn:hover{background:var(--pink2)}
 .btn.outline{background:transparent;border:1px solid white}
 
 .hero{padding:90px 7%;background:linear-gradient(135deg,#120d11,#30111f,#0e0b0d);display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
@@ -32,8 +34,9 @@ section{padding:60px 7%}
 .light{background:var(--soft);color:#22181f}
 .center{text-align:center;max-width:1100px;margin:auto}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
-.card{background:#171316;border:1px solid var(--line);padding:28px;border-radius:8px}
-.card h3{color:var(--pink);margin-top:0}
+.card{background:var(--card);border:1px solid var(--line);padding:28px;border-radius:8px}
+.card h2,.card h3{color:#ff8fb7;margin-top:0}
+.card p{color:#f4dce5}
 
 .meet{display:grid;grid-template-columns:1fr 1.1fr;gap:35px;align-items:center;padding:0}
 .meet img{width:100%;height:100%;object-fit:cover}
@@ -50,27 +53,14 @@ section{padding:60px 7%}
 .form-box{background:var(--soft);color:#241921;padding:28px;border-radius:8px}
 input,select,textarea{width:100%;padding:12px;margin:7px 0 15px;border:1px solid #d9b8c2;border-radius:4px}
 textarea{height:160px}
-.checkbox{display:flex;gap:10px;align-items:flex-start}
+.checkbox{display:flex;gap:10px;align-items:flex-start;color:#241921}
 .checkbox input{width:auto}
 
-.resource-card{display:flex;gap:15px;align-items:flex-start;margin-bottom:18px}
-  .resource-card{display:flex;gap:15px;align-items:flex-start;margin-bottom:18px}
-
-.resource-card a{
-  color:#f4dce5;
-  text-decoration:none;
-  font-weight:bold;
-}
-
-.resource-card p{
-  color:#f4dce5;
-}
-
-.resource-card h3{
-  color:#ff8fb7;
-}
-
-.icon{background:var(--pink);width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:bold}
+.resource-card{display:flex;gap:15px;align-items:flex-start;margin-bottom:22px}
+.resource-card h3{color:#ff8fb7;margin:0 0 4px}
+.resource-card a{color:#f4dce5;text-decoration:none;font-weight:bold}
+.resource-card a:hover{color:white;text-decoration:underline}
+.icon{background:var(--pink);width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:bold;color:#241921}
 
 footer{background:#050505;padding:30px 7%;text-align:center;color:#ddd}
 
@@ -78,6 +68,8 @@ footer{background:#050505;padding:30px 7%;text-align:center;color:#ddd}
 .hero,.meet,.books,.book-card{grid-template-columns:1fr}
 .hero h1{font-size:44px}
 .hero h1 span{font-size:56px}
+.links{justify-content:center}
+nav{text-align:center}
 }
 </style>
 </head>
@@ -87,10 +79,10 @@ footer{background:#050505;padding:30px 7%;text-align:center;color:#ddd}
 <nav>
   <div class="logo">YOUR STORY.<br>THEIR STORY.<br><span>Our Story ♡</span></div>
   <div class="links">
-    <a href="#home">HOME</a>
+    <a href="index.html">HOME</a>
     <a href="stories.html">READ STORIES</a>
     <a href="#share">SHARE YOUR STORY</a>
-    <a href="#resources">RESOURCES</a>
+    <a href="resources.html">RESOURCES</a>
     <a href="#about">ABOUT SAMMI</a>
     <a href="#contact">CONTACT</a>
   </div>
@@ -215,10 +207,27 @@ footer{background:#050505;padding:30px 7%;text-align:center;color:#ddd}
       <h2>Resources</h2>
       <p>You do not have to go through this alone.</p>
 
-      <div class="resource-card"><div class="icon">!</div><div><h3>Crisis Help</h3><p><a href="https://988lifeline.org/" target="_blank">988 Lifeline</a></p></div></div>
-      <div class="resource-card"><div class="icon">♡</div><div><h3>Recovery Support</h3><p><a href="https://www.samhsa.gov/find-help/helplines/national-helpline" target="_blank">SAMHSA Helpline</a></p></div></div>
-      <div class="resource-card"><div class="icon">⌕</div><div><h3>Treatment Locator</h3><p><a href="https://findtreatment.gov/" target="_blank">FindTreatment.gov</a></p></div></div>
-      <div class="resource-card"><div class="icon">+</div><div><h3>Naloxone Info</h3><p><a href="https://www.cdc.gov/stop-overdose/caring/naloxone.html" target="_blank">CDC Naloxone Guide</a></p></div></div>
+      <div class="resource-card">
+        <div class="icon">!</div>
+        <div><h3>Crisis Help</h3><p><a href="https://988lifeline.org/">988 Lifeline</a></p></div>
+      </div>
+
+      <div class="resource-card">
+        <div class="icon">♡</div>
+        <div><h3>Recovery Support</h3><p><a href="https://www.samhsa.gov/find-help/helplines/national-helpline">SAMHSA Helpline</a></p></div>
+      </div>
+
+      <div class="resource-card">
+        <div class="icon">⌕</div>
+        <div><h3>Treatment Locator</h3><p><a href="https://findtreatment.gov/">FindTreatment.gov</a></p></div>
+      </div>
+
+      <div class="resource-card">
+        <div class="icon">+</div>
+        <div><h3>Naloxone Info</h3><p><a href="https://www.cdc.gov/stop-overdose/caring/naloxone.html">CDC Naloxone Guide</a></p></div>
+      </div>
+
+      <a class="btn" href="resources.html">VIEW ALL RESOURCES</a>
     </div>
   </div>
 </section>
