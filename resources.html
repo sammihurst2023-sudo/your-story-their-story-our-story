@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Resources | Your Story, Their Story, Our Story</title>
 
 <style>
@@ -17,16 +16,23 @@ nav a{color:white;text-decoration:none;margin-left:25px;font-weight:bold;font-si
 nav a:hover{color:#e86b95}
 .hero{padding:100px 8%;text-align:center;background:linear-gradient(135deg,#171216,#31131f,#0d0b0c)}
 .hero h1{font-family:Georgia,serif;font-size:65px;margin-bottom:20px}
-.hero p{font-size:22px;max-width:850px;margin:auto;color:#ddd}
+.hero p{font-size:22px;max-width:850px;margin:auto;color:#f2dce5}
 .section{padding:70px 8%}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;max-width:1200px;margin:auto}
-.card{background:#181316;border:1px solid #5b2a3a;border-radius:12px;padding:30px}
-.card h2{font-family:Georgia,serif;color:#f3b6c8;margin-bottom:12px}
-.card p{color:#ddd;margin-bottom:18px}
+.note{max-width:950px;margin:0 auto 45px;text-align:center;color:#f2dce5;font-size:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:25px;max-width:1200px;margin:auto}
+.card{background:#181316;border:1px solid #7e3d50;border-radius:14px;padding:30px;box-shadow:0 12px 28px rgba(0,0,0,.25)}
+.card h2{font-family:Georgia,serif;color:#ff8fb7;margin-bottom:12px;font-size:28px}
+.card p{color:#f4dce5;margin-bottom:22px}
 .button{display:inline-block;padding:13px 24px;background:#e86b95;color:white;text-decoration:none;border-radius:8px;font-weight:bold}
-.button:hover{background:#f58aae}
-.note{max-width:950px;margin:0 auto 45px;text-align:center;color:#ddd}
+.button:hover{background:#ff9fbe}
+.warning{background:#fff1f4;color:#2b101b;border-radius:12px;padding:25px;max-width:950px;margin:0 auto 50px;text-align:center}
 footer{background:#050505;padding:40px;text-align:center;color:#bbb;margin-top:60px}
+@media(max-width:800px){
+header{display:block;text-align:center}
+nav{margin-top:18px}
+nav a{display:inline-block;margin:8px}
+.hero h1{font-size:46px}
+}
 </style>
 </head>
 
@@ -54,9 +60,14 @@ Their Story.<br>
 </section>
 
 <section class="section">
+
+<div class="warning">
+<strong>If you are in immediate danger or thinking about harming yourself, call or text 988 now.</strong>
+</div>
+
 <p class="note">
 This page is here for anyone touched by addiction, recovery, grief, or the weight of loving someone through it.
-If you are in immediate danger or thinking about harming yourself, call or text 988 now.
+These resources can help you find crisis support, treatment options, family support, recovery meetings, and grief support.
 </p>
 
 <div class="grid">
@@ -64,55 +75,55 @@ If you are in immediate danger or thinking about harming yourself, call or text 
 <div class="card">
 <h2>988 Lifeline</h2>
 <p>Free, confidential crisis support available 24/7 for anyone experiencing emotional distress or suicidal thoughts.</p>
-<a class="button" href="https://988lifeline.org/" target="_blank">Visit 988</a>
+<a class="button" href="https://988lifeline.org/">Visit 988 Lifeline</a>
 </div>
 
 <div class="card">
 <h2>SAMHSA National Helpline</h2>
 <p>Confidential treatment referral and information for mental health and substance use disorders.</p>
-<a class="button" href="https://www.samhsa.gov/find-help/helplines/national-helpline" target="_blank">Visit SAMHSA</a>
+<a class="button" href="https://www.samhsa.gov/find-help/helplines/national-helpline">Visit SAMHSA</a>
 </div>
 
 <div class="card">
 <h2>FindTreatment.gov</h2>
-<p>A treatment locator for substance use and mental health treatment services in the United States.</p>
-<a class="button" href="https://findtreatment.gov/" target="_blank">Find Treatment</a>
+<p>Find substance use and mental health treatment services anywhere in the United States.</p>
+<a class="button" href="https://findtreatment.gov/">Find Treatment</a>
 </div>
 
 <div class="card">
 <h2>Naloxone Information</h2>
 <p>Learn about naloxone, a medication that can reverse opioid overdose and save lives.</p>
-<a class="button" href="https://www.cdc.gov/stop-overdose/caring/naloxone.html" target="_blank">Learn More</a>
+<a class="button" href="https://www.cdc.gov/stop-overdose/caring/naloxone.html">Learn About Naloxone</a>
 </div>
 
 <div class="card">
 <h2>Nar-Anon</h2>
 <p>Support for families and friends of people struggling with addiction.</p>
-<a class="button" href="https://www.nar-anon.org/" target="_blank">Visit Nar-Anon</a>
+<a class="button" href="https://www.nar-anon.org/">Visit Nar-Anon</a>
 </div>
 
 <div class="card">
 <h2>Al-Anon</h2>
 <p>Support for people affected by someone else’s drinking.</p>
-<a class="button" href="https://al-anon.org/" target="_blank">Visit Al-Anon</a>
+<a class="button" href="https://al-anon.org/">Visit Al-Anon</a>
 </div>
 
 <div class="card">
 <h2>NA Meetings</h2>
 <p>Search for Narcotics Anonymous meetings and recovery support near you.</p>
-<a class="button" href="https://www.na.org/meetingsearch/" target="_blank">Find NA Meetings</a>
+<a class="button" href="https://www.na.org/meetingsearch/">Find NA Meetings</a>
 </div>
 
 <div class="card">
 <h2>AA Meetings</h2>
 <p>Find Alcoholics Anonymous meetings and support for alcohol recovery.</p>
-<a class="button" href="https://www.aa.org/find-aa" target="_blank">Find AA Meetings</a>
+<a class="button" href="https://www.aa.org/find-aa">Find AA Meetings</a>
 </div>
 
 <div class="card">
 <h2>GriefShare</h2>
 <p>Find grief support groups and resources for people grieving the loss of someone they love.</p>
-<a class="button" href="https://www.griefshare.org/" target="_blank">Visit GriefShare</a>
+<a class="button" href="https://www.griefshare.org/">Visit GriefShare</a>
 </div>
 
 </div>
